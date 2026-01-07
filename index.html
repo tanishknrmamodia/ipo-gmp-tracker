@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPO GMP Tracker | Latest Grey Market Premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0a2540;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background: #1f3c88;
+            color: white;
+        }
+        .positive {
+            color: green;
+            font-weight: bold;
+        }
+        .negative {
+            color: red;
+            font-weight: bold;
+        }
+        .disclaimer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #555;
+            background: #fff;
+            padding: 15px;
+            border-left: 4px solid #ff9800;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+            background: #eaeaea;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>IPO GMP Tracker</h1>
+    <p>Latest IPO Grey Market Premium</p>
+</header>
+
+<div class="container">
+    <h2>📊 Latest IPO GMP</h2>
+    <p style="color:#1f3c88;font-size:14px;">
+        <strong>Note:</strong> IPO GMP data is updated daily at <strong>9:00 PM</strong>.<br>
+        <strong>Last Updated:</strong> <span id="lastUpdated"></span>
+    </p>
+    <script>
+        const now = new Date();
+        const options = { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+        document.getElementById('lastUpdated').innerText = now.toLocaleString('en-IN', options);
+    </script>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Stock / IPO</th>
+                <th>IPO GMP</th>
+                <th>IPO Price (₹)</th>
+                <th>Listing Gain</th>
+                <th>Date</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bharat Coking Coal (BCCL)</td>
+                <td class="positive">₹11.5</td>
+                <td>₹23</td>
+                <td>50.00%</td>
+                <td>9–13 Jan</td>
+                <td>Mainboard</td>
+            </tr>
+            <tr>
+                <td>Modern Diagnostic</td>
+                <td class="positive">₹14</td>
+                <td>₹90</td>
+                <td>15.55%</td>
+                <td>31–2 Jan</td>
+                <td>SME</td>
+            </tr>
+            <tr>
+                <td>Gabion Technologies</td>
+                <td class="positive">₹30</td>
+                <td>₹81</td>
+                <td>37.04%</td>
+                <td>6–8 Jan</td>
+                <td>SME</td>
+            </tr>
+            <tr>
+                <td>Yajur Fibres</td>
+                <td class="positive">₹60</td>
+                <td>₹174</td>
+                <td>34.48%</td>
+                <td>7–9 Jan</td>
+                <td>SME</td>
+            </tr>
+            <tr>
+                <td>Victory Electric Vehicles</td>
+                <td>₹–</td>
+                <td>₹41</td>
+                <td>–%</td>
+                <td>7–9 Jan</td>
+                <td>SME</td>
+            </tr>
+            <tr>
+                <td>Defrail Technologies</td>
+                <td>₹–</td>
+                <td>₹74</td>
+                <td>–%</td>
+                <td>9–13 Jan</td>
+                <td>SME</td>
+            </tr>
+            <tr>
+                <td>Avana Electrosystems</td>
+                <td class="positive">₹5</td>
+                <td>₹59</td>
+                <td>8.47%</td>
+                <td>12–14 Jan</td>
+                <td>SME</td>
+            </tr>
+            <tr>
+                <td>Narmadesh Brass</td>
+                <td>₹–</td>
+                <td>₹515</td>
+                <td>–%</td>
+                <td>12–15 Jan</td>
+                <td>SME</td>
+            </tr>
+            <tr>
+                <td>INDO SMC</td>
+                <td class="positive">₹25</td>
+                <td>₹149</td>
+                <td>16.78%</td>
+                <td>13–15 Jan</td>
+                <td>SME</td>
+            </tr>
+            <tr>
+                <td>GRE Renew Enertech</td>
+                <td class="positive">₹9</td>
+                <td>₹105</td>
+                <td>8.57%</td>
+                <td>13–16 Jan</td>
+                <td>SME</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong> Grey Market Premium (GMP) is an unofficial indicator based on market sources. Stock market investments are subject to market risks.
+    </div>
+</div>
+
+<footer>
+    © 2026 IPO GMP Tracker | Created by Tanishk NR Mamodia
+</footer>
+
+</body>
+</html>
